@@ -1,6 +1,5 @@
 ## Class Diagram - Sistemi i Menaxhimit të Parkimit
 
-
 class Perdorues {
 - int idPerdorues
 - String emer
@@ -10,16 +9,16 @@ class Perdorues {
 
     + regjistrohu()
     + login()
-}
+      }
 
 class Klient {
 - int idKlienti
-- List~Makine~ makinat
+- Makine makina
 
     + paguaj()
     + kerkoRegjistrimHyrje()
     + kerkoRegjistrimDalje()
-}
+      }
 
 class Roje {
 - int idRoja
@@ -29,12 +28,13 @@ class Roje {
     + aprovoKerkeseHyrje()
     + regjistroHyrje()
     + regjistroDalje()
-}
+      }
 
 class Makine {
 - String targa
 - String marka
-}
+- Klient klient
+  }
 
 class Pagesa {
 - int idKerkese
@@ -43,13 +43,13 @@ class Pagesa {
 
     + bejPagese()
     + leshoKupon()
-}
+      }
 
 class VendParkimi {
 - int idVend
 - int numriVendit
 - String statusi
-}
+  }
 
 class Parkim {
 - int idParkim
@@ -60,4 +60,4 @@ class Parkim {
     + regjistroHyrje()
     + regjistroDalje()
     + llogaritDisponibilitet()
-}
+      }

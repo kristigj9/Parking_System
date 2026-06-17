@@ -41,5 +41,6 @@ public class Main {
         roja.regjistroDalje(parkim, makina1);
 
         roja.lexoVendeTeLira(parkim);
+        makina1.shfaqKlientin();
     }
 }

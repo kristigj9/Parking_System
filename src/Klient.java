@@ -1,12 +1,15 @@
 class Klient extends Perdorues {
     int idKlienti;
-    Makine makina;
+    Makine makina; // lidhje 1 me 1
 
     public Klient(int idPerdorues, int idKlienti, String emer, String mbiemer,
                   String email, String telefon, Makine makina) {
         super(idPerdorues, emer, mbiemer, email, telefon);
         this.idKlienti = idKlienti;
         this.makina = makina;
+
+        // lidhja nga makina te klienti
+        makina.klient = this;
     }
 
     public void paguaj(Pagesa pagesa) {

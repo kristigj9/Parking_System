@@ -1,8 +1,7 @@
-public class VendParkimi {
+class VendParkimi {
     int idVend;
     int numriVendit;
     String statusi;
-
     Makine makine;
 
     public VendParkimi(int idVend, int numriVendit) {
